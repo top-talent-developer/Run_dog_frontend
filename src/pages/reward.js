@@ -57,7 +57,7 @@ function Home() {
               fontSize: "20px",
             }}
             header={CardHeader1}
-          />
+          />  
           <Pager
             skip={skip}
             take={take}
@@ -183,6 +183,7 @@ const CardItem1 = (props) => {
     return (
       <Grid container className="text-center" style={{ padding: "10px" }}>
         <Grid item xs={6} sm={6} md={3} className="x-font4-white">
+
         </Grid>
         <Grid item xs={6} sm={6} md={3} className="x-font4-white">
           {item.nickname}
