@@ -22,7 +22,13 @@ function Home() {
     skip: 0,
     take: 5,
   });
+  const [page1, setPage1] = React.useState({
+    skip1: 0,
+    take1: 5,
+  });
   const { skip, take } = page;
+  const { skip1, take1 } = page1;
+
 
   const handlePageChange = (e) => {
     setPage({
@@ -31,9 +37,10 @@ function Home() {
     });
   };
   const handlePageChange1 = (e) => {
-    setPage({
-      skip: e.skip,
-      take: e.take,
+    
+    setPage1({
+      skip1: e.skip,
+      take1: e.take,
     });
   };
   return (
@@ -47,7 +54,7 @@ function Home() {
           }}
         >
           <ListView
-            data={state.players.slice(skip, skip + take)}
+            data={state.players.slice(skip1, skip1 + take1)}
             item={CardItem1}
             style={{
               width: "100%",
@@ -59,8 +66,8 @@ function Home() {
             header={CardHeader1}
           />  
           <Pager
-            skip={skip}
-            take={take}
+            skip={skip1}
+            take={take1}
             onPageChange={handlePageChange1}
             total={state.players.length}
             style={{

@@ -1,6 +1,6 @@
 {
     "rundogToken": {
-        "address": "0x0f1682A1725fE542d4F8e802879dCb66A01938A4",
+        "address": "0xd20d19Cd3A05233b97bf399a3E8E2E28efb811C5",
         "abi": [
             {
                 "inputs": [
@@ -636,7 +636,7 @@
         ]
     },
     "store": {
-        "address": "0x7b75c76E0DC065aB58D5ceC0ed43705a94aE9337",
+        "address": "0x3728dCA9D3fCD60FD65d2ac8482eFF60f9bd9409",
         "abi": [
             {
                 "inputs": [],
@@ -680,6 +680,19 @@
                 ],
                 "name": "OwnershipTransferred",
                 "type": "event"
+            },
+            {
+                "inputs": [],
+                "name": "PancakeSwapRouter",
+                "outputs": [
+                    {
+                        "internalType": "contract IPancakeSwapRouter",
+                        "name": "",
+                        "type": "address"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
             },
             {
                 "inputs": [
@@ -738,9 +751,21 @@
                         "internalType": "address",
                         "name": "_tokenAddress",
                         "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "_RouterAddress",
+                        "type": "address"
                     }
                 ],
-                "name": "setTokenAddress",
+                "name": "setInitAddresses",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "swapToETH",
                 "outputs": [],
                 "stateMutability": "nonpayable",
                 "type": "function"
@@ -806,11 +831,15 @@
                 "outputs": [],
                 "stateMutability": "nonpayable",
                 "type": "function"
+            },
+            {
+                "stateMutability": "payable",
+                "type": "receive"
             }
         ]
     },
     "presale": {
-        "address": "0x524Eef37fDF5196a3FCCa6D16e88FFdBAE53EF91",
+        "address": "0x9083C031Db24F0423Caf38E148fBE3721839BA60",
         "abi": [
             {
                 "inputs": [

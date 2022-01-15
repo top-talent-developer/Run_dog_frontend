@@ -13,8 +13,8 @@ const RPCS = {
 }
 
 const providers = {
-    1: new ethers.providers.JsonRpcProvider(RPCS[1]),
-    250: new ethers.providers.JsonRpcProvider(RPCS[250]),
+    // 1: new ethers.providers.JsonRpcProvider(RPCS[1]),
+    // 250: new ethers.providers.JsonRpcProvider(RPCS[250]),
     4002: new ethers.providers.JsonRpcProvider(RPCS[4002]),
     // 1337: new ethers.providers.JsonRpcProvider(RPCS[1337]),
     // 31337: new ethers.providers.JsonRpcProvider(RPCS[31337])

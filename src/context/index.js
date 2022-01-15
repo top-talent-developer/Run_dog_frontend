@@ -191,7 +191,7 @@ export default function Provider({ children }) {
             NotificationManager.success("Deposit " + amount + "RD Success");
         } catch (err) {
             console.log(err);
-            NotificationManager.error("deposit error");
+            NotificationManager.error("deposit error",err.message);
         }
     }
 
